@@ -1,0 +1,55 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#656565"
+    android:stretchColumns="1" >
+    
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/eaglero_logo" >
+    </ImageView>
+	<TableRow>
+	    <EditText
+	        android:layout_width="230dp"
+	        android:layout_height="28dp"
+	        android:background="#F47320"
+	        android:layout_marginLeft="80dp"
+	        android:layout_marginBottom="15dp"
+	        android:hint="ID" />
+	</TableRow>
+	<TableRow>
+	    <EditText
+	        android:layout_width="230dp"
+	        android:layout_height="28dp"
+	        android:layout_marginLeft="80dp"
+	        android:layout_marginBottom="15dp"
+	        android:background="#F47320"
+	        android:hint="PASSWORD"
+	        android:password="true" />
+	</TableRow>
+	<TableRow>
+	    <ImageButton
+	        android:id="@+id/bt_login"
+	        android:layout_width="230dp"	
+	        android:layout_height="40dp"        
+	        android:layout_marginLeft="80dp"
+	        android:layout_marginBottom="15dp"
+	        android:scaleType="fitXY"
+	        android:src="@drawable/login"
+	        android:background="#00000000"
+	        />
+	</TableRow>
+	<TableRow>
+	    <ImageButton	        
+	        android:id="@+id/bt_reg"
+	        android:src="@drawable/singup"
+	        android:scaleType="fitXY"
+	        android:layout_width="230dp"
+	        android:layout_height="40dp"  
+	        android:layout_marginLeft="80dp"
+	        android:background="#00000000" />
+	</TableRow>
+</TableLayout>

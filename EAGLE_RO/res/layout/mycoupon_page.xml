@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="#656564">
+        
+     <TextView
+         android:id="@+id/text"
+         android:layout_width="216dp"
+         android:layout_height="80dp"
+         android:layout_gravity="center"
+         android:layout_marginBottom="15dp"
+         android:layout_marginTop="15dp"
+         android:gravity="center"
+         android:text="고객님의 쿠폰 발급 및 사용내역을 조회할 수 있습니다."
+         android:textColor="#FAB483"
+         android:textSize="14dp"
+         android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#959595"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            
+            
+				<LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#252525"
+                android:orientation="vertical" >
+
+					    
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="TextView"
+                    android:textAppearance="?android:attr/textAppearanceLarge" >
+                </TextView>
+                
+                <TextView
+                    android:id="@+id/textview_point"
+                    android:layout_width="331dp"
+                    android:layout_height="67dp"
+                    android:layout_gravity="center"
+                    android:background="#3C352F"
+                    android:gravity="center" 
+                    android:text="15,000 POINT"
+                    android:textColor="#F37320"
+                    android:textAppearance="?android:attr/textAppearanceLarge" >
+                </TextView>
+
+                <ListView
+                    android:id="@+id/listView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="260dp"
+                    android:layout_weight="1"
+                    android:divider="#959595"
+                    android:dividerHeight="0.44dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center"
+                     >
+                </ListView>
+            
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edmy02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="두번째 화면입니다." />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edmy03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="세번쨰 화면입니다." />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

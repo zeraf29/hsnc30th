@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#3C352F" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="21dp"
+        android:text="나이키 덩크 20% 할인"
+        android:textColor="#E9E9EB"
+        android:textSize="24dp" >
+    </TextView>
+    <TextView
+        android:id="@+id/address"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="53dp"
+        android:layout_marginLeft="21dp"
+        android:text="서울특별시 강남구 압구정동 494"
+        android:textColor="#707070"
+        android:textSize="11dp" >
+    </TextView>
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/icon_nike" >
+    </ImageView>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="143dp" >
+
+        <TableRow>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="90dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_category" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/info"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="97dp"
+                android:text="스포츠레저 | 7F"
+                android:textColor="#E9E9EB"
+                android:textSize="16dp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="center"
+                android:text="!"
+                android:textColor="#707070"
+                android:textSize="26dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="타 할인 서비스와 중복할인 불가"
+                android:textColor="#707070"
+                android:textSize="15dp" >
+            </TextView>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bt_use"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_span="2"
+                android:background="#FAB483"
+                android:text="쿠폰 사용하기"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="250dp"
+        android:text="본 버튼은 담당자가 확인하는 버튼입니다."
+        android:textColor="#F37320"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="280dp"
+        android:gravity="center"
+        android:text="사용 확인이 된 쿠폰은 재사용이 불가함으로 사용 전에는 해당 버튼을 누르지 마시기 바랍니다."
+        android:textColor="#FAB483"
+        android:textSize="15dp" />
+
+</RelativeLayout>

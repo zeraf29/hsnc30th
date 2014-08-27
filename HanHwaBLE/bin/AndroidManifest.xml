@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="skku.icc.lk.hanhwable"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="skku.icc.lk.hanhwable.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="BLEService" >
+            <intent-filter>
+                <action android:name="skku.icc.lk.HanHwaBeacon" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="BLEReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.beaconReady" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.pairBeacon" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.announcement" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.ACTION_GATT_CONNECTED" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.ACTION_GATT_DISCONNECTED" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.ACTION_GATT_SERVICES_DISCOVERED" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.ACTION_DATA_AVAILABLE" />
+                <action android:name="skku.icc.lk.HanHwaBeacon.EXTRA_DATA" />
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_FINISHED"/>
+                <action android:name="android.bluetooth.adapter.action.DISCOVERY_STARTED"/>
+                <action android:name="android.bluetooth.adapter.action.LOCAL_NAME_CHANGED"/>
+                <action android:name="android.bluetooth.adapter.action.SCAN_MODE_CHANGED"/>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED"/>
+                <action android:name="android.bluetooth.device.action.BOND_STATE_CHANGED"/>
+                <action android:name="android.bluetooth.device.action.CLASS_CHANGED"/>
+                <action android:name="android.bluetooth.device.action.FOUND"/>
+				<action android:name="android.bluetooth.device.action.NAME_CHANGED"/>
+                <action android:name="android.bluetooth.device.action.PAIRING_REQUEST"/>
+                <action android:name="android.bluetooth.device.action.UUID"/>
+                </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

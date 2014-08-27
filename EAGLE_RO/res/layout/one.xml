@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#656565" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" 
+        android:background="#656565">
+        
+	    <TextView
+        android:id="@+id/text"
+        android:background="#656565"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="MY COUPON"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+	    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#4aa6ce"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2" />
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+				<ListView android:id="@+id/Custom_List"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content">
+			    </ListView>
+                <EditText
+                    android:id="@+id/edmy01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="첫번째 화면입니다." />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edmy02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="두번째 화면입니다." />
+            </LinearLayout>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <LinearLayout
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/edmy03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="세번쨰 화면입니다." />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#656564"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="고객님의 포인트 내역을 조회할 수 있습니다."
+        android:textColor="#FAB483"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_point"
+        android:layout_width="340dp"
+        android:layout_height="67dp"
+        android:layout_gravity="center"
+        android:background="#3C352F"
+        android:gravity="center"
+        android:text="200 POINT"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#F37320" >
+    </TextView>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="310dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:divider="#959595"
+        android:dividerHeight="0.54dp"
+        android:textColor="#FFFFFF" >
+    </ListView>
+
+</LinearLayout>

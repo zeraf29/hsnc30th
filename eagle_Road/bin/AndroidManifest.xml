@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eagle_road"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".LoginActivity"
+            android:label="EAGLE ROAD" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:label="Eagle Road" />
+        <activity android:name=".oneActivity" android:label="My coupon" /> 
+        <activity android:name=".sixActivity" android:label="Setting" /> 
+        <activity android:name=".twoActivity" /> 
+        <activity android:name=".six_one" /> 
+        <activity android:name=".six_two" /> 
+        <activity android:name=".CouponActivity" /> 
+        <activity android:name=".fiveActivity"  android:label="Point"/> 
+    </application>
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="#656564"> 
+    
+	<TableRow>
+	    <ImageView
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_marginLeft="100dp"
+	        android:layout_marginTop="90dp"
+	        android:src="@drawable/cloth" >
+	    </ImageView>
+        <TextView
+                    android:id="@+id/textview_point"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+					android:layout_marginTop="90dp"
+					android:layout_marginLeft="50dp"
+                    android:text="스포츠레저 | 7F"
+
+                    android:textColor="#707070">
+                    
+         </TextView>     
+	</TableRow>
+	
+	<TableRow>
+	    <ImageView
+	        android:layout_width="60dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="100dp"
+	        android:src="@drawable/cloth" >
+	    </ImageView>
+	    <ImageView
+	        android:layout_width="60dp"
+	        android:layout_height="40dp"
+	        android:layout_marginTop="100dp"
+	        android:src="@drawable/cloth" >
+	    </ImageView>     
+	</TableRow>
+</TableLayout>
+ 
+
